@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MQTTnet;
+﻿using MQTTnet;
 using MQTTnet.Client;
 
 namespace NetCoreClient.Protocols
@@ -13,7 +8,7 @@ namespace NetCoreClient.Protocols
         private const string TOPIC_PREFIX = "water_coolers/123/data";
         private IMqttClient mqttClient;
         private string endpoint;
-
+         
 
         public Mqtt(string endpoint)
         {
@@ -21,6 +16,7 @@ namespace NetCoreClient.Protocols
 
             Connect().GetAwaiter().GetResult();
         }
+
         private async Task<MqttClientConnectResult> Connect()
         {
             var factory = new MqttFactory();
@@ -48,3 +44,4 @@ namespace NetCoreClient.Protocols
 
     }
 }
+                                    
