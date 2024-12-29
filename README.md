@@ -14,6 +14,7 @@ Il sistema è suddiviso in due parti:
 -Server: Riceve i dati inviati dal client, li elabora e li memorizza in un database.
 
 Suddivisione dei ruoli:
+
 -Deni: parte client, sviluppo codice per la creazione di sensori, la ricezione dei dati e l'invio degli stessi al server tramite i protocolli:
   -http: utilizzo di Ngrock per l'invio di dati 
   -mqtt: broker Mosquitto per l'invio di dati
